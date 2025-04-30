@@ -153,7 +153,7 @@
 &trans      &kp F7     &kp F8     &kp F9        &kp F10       &kp F11       &kp F12       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT      &trans
 &trans      &kp PSCRN  &email     &save         &none         &none         &none         &kp LALT TAB  &kp LCTRL TAB &kp LGUI TAB  &none          &trans
                                   // Left Thumb                // Right Thumb
-                                  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &trans        &trans        &trans // Temporarily replaced &bt BT_0/1 with &trans
+                                  &trans        &trans        &trans        &trans        &trans        &trans // All thumbs set to &trans for testing parser
             >;
         };
 
