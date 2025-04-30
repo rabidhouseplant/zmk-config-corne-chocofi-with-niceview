@@ -9,9 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h> // Include for output control if needed
 
-// Removed the #define directives as they didn't resolve the parsing issue reliably.
-// We will use the standard BT_0, BT_1 keycodes directly.
-
 / {
     behaviors {
         // Single Homerow Mod behavior for consistency
@@ -156,7 +153,7 @@
 &trans      &kp F7     &kp F8     &kp F9        &kp F10       &kp F11       &kp F12       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT      &trans
 &trans      &kp PSCRN  &email     &save         &none         &none         &none         &kp LALT TAB  &kp LCTRL TAB &kp LGUI TAB  &none          &trans
                                   // Left Thumb                // Right Thumb
-                                  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &trans        &bt BT_0      &bt BT_1 // Use standard BT_0, BT_1 keycodes
+                                  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &trans        &trans        &trans // Temporarily replaced &bt BT_0/1 with &trans
             >;
         };
 
