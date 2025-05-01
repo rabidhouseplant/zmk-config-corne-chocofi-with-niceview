@@ -144,19 +144,20 @@
         };
 
         // Navigation & Function Layer (Layer 2) - Activated by Right Thumb
-        // Simple Key Presses - No Hold-Taps within the layer
+        // Temporarily commented out the entire layer for debugging
+        /*
         nav {
             label = "Navigation";
             bindings = <
 // Left Hand                                                       // Right Hand
 &trans      &kp F1     &kp F2     &kp F3        &kp F4        &kp F5        &kp F6        &kp HOME      &kp PG_DN     &kp PG_UP     &kp END        &trans
 &trans      &kp F7     &kp F8     &kp F9        &kp F10       &kp F11       &kp F12       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT      &trans
-// Simplified line 138 below for debugging:
-&trans      &kp PSCRN  &kp A      &kp B         &none         &none         &none         &kp C         &kp D         &kp E         &none          &trans
+&trans      &kp PSCRN  &email     &save         &none         &none         &none         &kp LALT TAB  &kp LCTRL TAB &kp LGUI TAB  &none          &trans
                                   // Left Thumb                // Right Thumb
-                                  &trans        &trans        &trans        &trans        &trans        &trans // Keep thumb row simple for now
+                                  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &trans        &bt BT_0      &bt BT_1
             >;
         };
+        */
 
-    };
-};
+    }; // End keymap
+}; // End root node
